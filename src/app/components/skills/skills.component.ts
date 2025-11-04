@@ -31,8 +31,8 @@ export class SkillsComponent implements OnInit {
       skills: [
         { name: "Angular", level: 90 },
         { name: "React", level: 85 },
-        { name: "JavaScript", level: 95 },
-        { name: "TypeScript", level: 80 },
+        { name: "JavaScript/TypeScript", level: 95 },
+        // { name: "TypeScript", level: 80 },
       ],
     },
     {
@@ -40,14 +40,14 @@ export class SkillsComponent implements OnInit {
       skills: [
         { name: ".NET", level: 90 },
         { name: "C#", level: 85 },
-        { name: "Python", level: 80 },
+        // { name: "Python", level: 80 },
         { name: "SQL", level: 85 },
       ],
     },
     {
       title: "Other Technologies",
       skills: [
-        { name: "Java", level: 75 },
+        // { name: "Java", level: 75 },
         { name: "Git & Version Control", level: 90 },
         { name: "API Development", level: 85 },
         { name: "Data Science Fundamentals", level: 70 },

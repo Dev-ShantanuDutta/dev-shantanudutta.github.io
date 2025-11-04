@@ -33,6 +33,7 @@
                 type="text"
                 id="name"
                 name="name"
+                placeholder="Your Name"
                 [(ngModel)]="formData.name"
                 required
                 [disabled]="isSubmitting"
@@ -49,6 +50,7 @@
                 type="email"
                 id="email"
                 name="email"
+                placeholder="Your Email"
                 [(ngModel)]="formData.email"
                 required
                 [disabled]="isSubmitting"
@@ -67,6 +69,7 @@
               type="text"
               id="subject"
               name="subject"
+              placeholder="Your Subject"
               [(ngModel)]="formData.subject"
               required
               [disabled]="isSubmitting"
@@ -84,6 +87,7 @@
               id="message"
               name="message"
               rows="6"
+              placeholder="Your Message"
               [(ngModel)]="formData.message"
               required
               [disabled]="isSubmitting"
@@ -132,19 +136,10 @@
               </a>
             </div>
 
-            <div>
-              <h4 class="text-sm font-semibold text-gray-900 mb-1">Phone</h4>
-              <a
-                href="tel:+919999876543"
-                class="text-blue-600 hover:text-blue-800 transition-colors duration-200"
-              >
-                +91 83207 10650
-              </a>
-            </div>
 
             <div>
               <h4 class="text-sm font-semibold text-gray-900 mb-1">Location</h4>
-              <p class="text-gray-600">Bharuch, Gujarat, India</p>
+              <p class="text-gray-600">India</p>
             </div>
           </div>
 

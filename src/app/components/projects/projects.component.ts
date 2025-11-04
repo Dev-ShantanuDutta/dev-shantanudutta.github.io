@@ -49,20 +49,20 @@ export class ProjectsComponent {
       githubUrl: null,
       liveUrl: null
     },
-    // {
-    //   title: "HDS - Help Desk System",
-    //   description: "Modern IT help desk application built with Angular 19 featuring intelligent ticket management, AI-powered responses, and advanced analytics with real-time collaboration.",
-    //   detailedDescription: "HAS is a comprehensive IT service management system built with Angular 19's latest features including signals, standalone components, and the new control flow syntax. Developed using .NET 8 Web APIs with clean architecture, Entity Framework Core 8, and SQL Server database. The system features intelligent ticket routing using machine learning algorithms, automated escalation workflows with Angular animations, and SLA monitoring with real-time alerts using Angular Material notifications. It includes an AI-powered knowledge base with searchable articles using Angular's new search capabilities, integrated chat system with SignalR for real-time support, and comprehensive reporting with interactive charts using Angular Charts. The application implements advanced role-based permissions with Angular Guards, audit trails with detailed logging, and integrates with Active Directory for seamless user management using Microsoft Graph APIs.",
-    //   technologies: ["Angular 19", ".NET 8", "SQL Server", "Web APIs", "AI/ML", "Azure"],
-    //   features: ["Intelligent Routing", "Real-time Chat", "Advanced Analytics", "Role-based Access"],
-    //   image: "🎫",
-    //   challenges: "Integrated AI/ML capabilities for intelligent ticket categorization, implemented complex workflow automation with Angular's reactive patterns, and created efficient search algorithms with debounced inputs and caching strategies.",
-    //   results: "Reduced average ticket resolution time by 60%, improved customer satisfaction scores by 45%, automated 85% of routine tasks, and achieved 40% faster response times with AI assistance.",
-    //   githubUrl: null,
-    //   liveUrl: null
-    // },
     {
-      title: "Studio - Learning Management System",
+      title: "HDS - Help Desk System",
+      description: "Modern IT help desk application built with Angular 19 featuring intelligent ticket management, AI-powered responses, and advanced analytics with real-time collaboration.",
+      detailedDescription: "HAS is a comprehensive IT service management system built with Angular 19's latest features including signals, standalone components, and the new control flow syntax. Developed using .NET 8 Web APIs with clean architecture, Entity Framework Core 8, and SQL Server database. The system features intelligent ticket routing using machine learning algorithms, automated escalation workflows with Angular animations, and SLA monitoring with real-time alerts using Angular Material notifications. It includes an AI-powered knowledge base with searchable articles using Angular's new search capabilities, integrated chat system with SignalR for real-time support, and comprehensive reporting with interactive charts using Angular Charts. The application implements advanced role-based permissions with Angular Guards, audit trails with detailed logging, and integrates with Active Directory for seamless user management using Microsoft Graph APIs.",
+      technologies: ["Angular 19", ".NET 8", "SQL Server", "Web APIs", "AI/ML", "Azure"],
+      features: ["Intelligent Routing", "Real-time Chat", "Advanced Analytics", "Role-based Access"],
+      image: "🎫",
+      challenges: "Integrated AI/ML capabilities for intelligent ticket categorization, implemented complex workflow automation with Angular's reactive patterns, and created efficient search algorithms with debounced inputs and caching strategies.",
+      results: "Reduced average ticket resolution time by 60%, improved customer satisfaction scores by 45%, automated 85% of routine tasks, and achieved 40% faster response times with AI assistance.",
+      githubUrl: null,
+      liveUrl: null
+    },
+    {
+      title: "Studiac - Learning Management System",
       description: "Scalable LMS built with Angular 10 and Spring Boot, enabling efficient online course delivery, progress tracking, and collaborative learning for institutions and enterprises.",
       detailedDescription: "Studio is a robust Learning Management System designed using Angular 10 and Java Spring Boot, aimed at simplifying online education and training. The frontend leverages Angular modules, lazy loading, and reactive forms for performance and responsiveness, while the backend is powered by Spring Boot RESTful APIs with JWT-based authentication, Hibernate ORM, and MySQL/PostgreSQL for persistence. Key features include dynamic course creation with multimedia support, role-based dashboards for students, instructors, and admins, real-time quiz evaluation with custom timers, and assignment submission tracking. The system integrates video content hosting, discussion forums, and automated email notifications for improved learner engagement. Admin features include analytics dashboards, user management, and customizable grading workflows. Designed with scalability and security in mind, Studio supports OAuth 2.0 integration and secure file handling.",
       technologies: ["Angular 10", "Spring Boot", "MySQL", "REST APIs", "JWT", "OAuth 2.0"],

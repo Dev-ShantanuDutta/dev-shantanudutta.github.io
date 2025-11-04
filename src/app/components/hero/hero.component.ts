@@ -20,7 +20,7 @@ export class HeroComponent {
   codeIcon = Code;
   zapIcon = Zap;
 
-  techStack = ["Angular", "React", ".NET", "Python", "JavaScript"];
+  techStack = ["Angular", "React", ".NET", "Node.Js", "TypeScript", "JavaScript"];
 
   scrollToSection(sectionId: string) {
     const element = document.getElementById(sectionId);
