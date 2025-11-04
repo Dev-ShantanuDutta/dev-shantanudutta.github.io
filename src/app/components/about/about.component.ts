@@ -16,9 +16,9 @@ export class AboutComponent {
   ];
 
   stats = [
-    { value: "2+", label: "Years Experience", color: "text-blue-600" },
+    { value: "3+", label: "Years Experience", color: "text-blue-600" },
     { value: "10+", label: "Technologies", color: "text-purple-600" },
-    { value: "3", label: "Major Projects", color: "text-blue-600" },
+    { value: "5", label: "Major Projects", color: "text-blue-600" },
     { value: "100%", label: "Freelance Ready", color: "text-purple-600" },
   ];
 }
