@@ -1,6 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
-import { Github, Linkedin, LucideAngularModule } from "lucide-angular";
+import { Clock, Github, Linkedin, LucideAngularModule, Mail, MapPin } from "lucide-angular";
 
 @Component({
   selector: "app-footer",
@@ -9,9 +9,12 @@ import { Github, Linkedin, LucideAngularModule } from "lucide-angular";
   styleUrl: "./footer.component.css",
 })
 export class FooterComponent {
-  githubIcon = Github;
-  linkedinIcon = Linkedin;
-  myEmailAddress = "shantanudutta07@gmail.com";
+    linkedinIcon = Linkedin;
+    githubIcon = Github;
+    mailIcon = Mail;
+    mapPinIcon = MapPin;
+    clockIcon = Clock;
+    myEmailAddress = "shantanudutta07@gmail.com";
 
   navLinks = [
     { name: "Home", id: "home" },

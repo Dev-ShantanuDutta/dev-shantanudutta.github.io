@@ -4,12 +4,10 @@
       <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
         Skills & Services
       </h2>
-      <div
-        class="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full mb-6"
-      ></div>
+      <div class="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full mb-6"></div>
       <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-        I am available for freelance projects in web development, API
-        integrations, and software solutions.
+        Specialized in building enterprise-grade web applications with ASP.NET Core and Angular. Available for full-time
+        roles, contract projects, and technical consulting.
       </p>
     </div>
 
@@ -19,10 +17,8 @@
         Technical Skills
       </h3>
       <div class="grid lg:grid-cols-3 gap-8">
-        <div
-          *ngFor="let category of skillCategories"
-          class="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/20"
-        >
+        <div *ngFor="let category of skillCategories"
+          class="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/20">
           <h4 class="text-xl font-semibold text-gray-900 mb-6">
             {{ category.title }}
           </h4>
@@ -35,8 +31,7 @@
               <div class="w-full bg-gray-200 rounded-full h-2">
                 <div
                   class="bg-gradient-to-r from-blue-600 to-purple-600 h-2 rounded-full transition-all duration-1000 ease-out"
-                  [style.width.%]="animatedLevels[skill.name] || 0"
-                ></div>
+                  [style.width.%]="animatedLevels[skill.name] || 0"></div>
               </div>
             </div>
           </div>
@@ -50,10 +45,8 @@
         Services I Offer
       </h3>
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div
-          *ngFor="let service of services"
-          class="group bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-white/20 hover:shadow-xl hover:scale-105 transition-all duration-300"
-        >
+        <div *ngFor="let service of services"
+          class="group bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-white/20 hover:shadow-xl hover:scale-105 transition-all duration-300">
           <div class="text-4xl mb-4">{{ service.icon }}</div>
           <h4 class="text-lg font-semibold text-gray-900 mb-3">
             {{ service.title }}
@@ -61,6 +54,7 @@
           <p class="text-gray-600 text-sm leading-relaxed">
             {{ service.description }}
           </p>
+          <div style="font-size: small;margin-top: 10px;" [innerHTML]="service.customHtml"></div>
         </div>
       </div>
     </div>

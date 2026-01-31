@@ -1,75 +1,130 @@
 <footer class="bg-gray-900 text-white py-12">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid md:grid-cols-4 gap-8">
+      <!-- Left Column - About -->
       <div class="md:col-span-2">
         <div class="mb-4">
           <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
             Shantanu Dutta
           </h3>
           <p class="text-gray-400 mt-2">
-            Full-Stack Developer | Angular & .NET Specialist
+            Full Stack Developer | ASP.NET Core + Angular Specialist
           </p>
         </div>
-        <p class="text-gray-300 leading-relaxed mb-6">
-          Passionate software developer creating efficient and scalable
-          applications with modern technologies. Available for freelance
-          projects and collaborations.
+
+        <!-- Updated description with stats -->
+        <p class="text-gray-300 leading-relaxed mb-4">
+          Building enterprise-grade web applications with 3+ years of experience.
+          Specialized in ASP.NET Core, Angular, and cloud solutions.
         </p>
+
+        <!-- Add stats bar -->
+        <div class="flex flex-wrap gap-3 text-sm text-gray-400 mb-6">
+          <span class="flex items-center">
+            <span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>
+            3+ Years Experience
+          </span>
+          <span class="flex items-center">
+            <span class="w-2 h-2 bg-purple-400 rounded-full mr-2"></span>
+            10+ Projects
+          </span>
+          <span class="flex items-center">
+            <span class="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
+            5,000+ Users Served
+          </span>
+        </div>
+
+        <!-- Social links with better styling -->
         <div class="flex space-x-4">
-          <a
-            href="https://linkedin.com/in/shantanu-dutta-dev"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="bg-blue-600 p-3 rounded-lg hover:bg-blue-700 transition-colors duration-200"
-          >
+
+          <a href="https://linkedin.com/in/shantanu-dutta-dev" target="_blank" rel="noopener noreferrer"
+            class="bg-blue-600 p-3 rounded-lg hover:bg-blue-700 transition-all duration-200 hover:scale-110"
+            aria-label="LinkedIn Profile">
             <lucide-icon [img]="linkedinIcon" size="20"></lucide-icon>
           </a>
-          <a
-            href="https://github.com/Shantanu-Dutta-2001"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="bg-gray-700 p-3 rounded-lg hover:bg-gray-600 transition-colors duration-200"
-          >
+
+          <a href="https://github.com/Shantanu-Dutta-2001" target="_blank" rel="noopener noreferrer"
+            class="bg-gray-700 p-3 rounded-lg hover:bg-gray-600 transition-all duration-200 hover:scale-110"
+            aria-label="GitHub Profile">
             <lucide-icon [img]="githubIcon" size="20"></lucide-icon>
+          </a>
+
+          <a href="mailto:shantanudutta07@gmail.com"
+            class="bg-purple-600 p-3 rounded-lg hover:bg-purple-700 transition-all duration-200 hover:scale-110"
+            aria-label="Email">
+            <lucide-icon [img]="mailIcon" size="20"></lucide-icon>
           </a>
         </div>
       </div>
 
+      <!-- Quick Links -->
       <div>
-        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+        <h4 class="text-lg font-semibold mb-4 text-white">Quick Links</h4>
         <ul class="space-y-2">
           <li *ngFor="let link of navLinks">
-            <button
-              (click)="scrollToSection(link.id)"
-              class="text-gray-300 hover:text-white transition-colors duration-200"
-            >
+            <button (click)="scrollToSection(link.id)"
+              class="text-gray-300 hover:text-blue-400 transition-colors duration-200 flex items-center group">
+              <span class="mr-2 opacity-0 group-hover:opacity-100 transition-opacity">→</span>
               {{ link.name }}
             </button>
           </li>
         </ul>
       </div>
 
+      <!-- Contact & Availability -->
       <div>
-        <h4 class="text-lg font-semibold mb-4">Contact</h4>
-        <ul class="space-y-2 text-gray-300">
-          <li>
-            <a
-              href="mailto:shantanudutta07@gmail.com"
-              class="hover:text-white transition-colors duration-200"
-            >
+        <h4 class="text-lg font-semibold mb-4 text-white">Get in Touch</h4>
+        <ul class="space-y-3 text-gray-300">
+          <li class="flex items-start">
+            <lucide-icon [img]="mailIcon" size="16" class="mt-1 mr-2 text-blue-400"></lucide-icon>
+
+            <a href="mailto:shantanudutta07@gmail.com"
+              class="hover:text-blue-400 transition-colors duration-200 break-all">
               {{ myEmailAddress }}
             </a>
           </li>
-          <li>India</li>
+          <li class="flex items-start">
+            <lucide-icon [img]="mapPinIcon" size="16" class="mt-1 mr-2 text-purple-400"></lucide-icon>
+            <span>Surat, Gujarat, India</span>
+          </li>
+          <li class="flex items-start">
+            <lucide-icon [img]="clockIcon" size="16" class="mt-1 mr-2 text-green-400"></lucide-icon>
+            <span>Response time: 24 hours</span>
+          </li>
         </ul>
+
+        <!-- Availability Badge -->
+        <div
+          class="mt-4 inline-flex items-center gap-2 bg-green-500/10 border border-green-500/20 rounded-full px-3 py-1.5">
+          <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+          <span class="text-sm text-green-400 font-medium">Available for Work</span>
+        </div>
       </div>
     </div>
 
-    <div class="border-t border-gray-800 mt-8 pt-8 text-center">
-      <p class="text-gray-400">
-        © 2024 Shantanu Dutta. All rights reserved. Built with Angular &
-        Tailwind CSS.
-      </p>
+    <!-- Bottom Bar -->
+    <div class="border-t border-gray-800 mt-8 pt-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <!-- Copyright -->
+        <p class="text-gray-400 text-sm text-center md:text-left">
+          © 2026 Shantanu Dutta. All rights reserved.
+        </p>
+
+        <!-- Tech Stack -->
+        <p class="text-gray-500 text-sm flex items-center gap-2">
+          <span>Built with</span>
+          <span class="text-red-500">♥</span>
+          <span>using</span>
+          <span class="text-blue-400 font-semibold">Angular 17</span>
+          <span>&</span>
+          <span class="text-purple-400 font-semibold">Bootstrap CSS</span>
+        </p>
+
+        <!-- Last Updated -->
+        <p class="text-gray-500 text-xs">
+          Last updated: January 2026
+        </p>
+      </div>
     </div>
   </div>
 </footer>
